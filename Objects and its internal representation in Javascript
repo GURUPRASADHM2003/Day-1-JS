@@ -1,0 +1,29 @@
+Introduction:
+JavaScript is renowned for its object-oriented nature, where everything revolves around objects. Understanding how objects are represented internally is crucial for writing efficient and optimized JavaScript code. In this blog post, we'll delve into the internals of objects in JavaScript, exploring how they are structured and stored in memory.
+
+1.Objects in JavaScript:
+
+In JavaScript, objects are collections of key-value pairs, where each value can be a primitive data type, another object, or a function.
+Objects can be created using object literals, constructor functions, or classes in modern JavaScript.
+
+2.Properties and Methods:
+
+Properties are the key-value pairs within an object that hold data.
+Methods are functions that are associated with objects and can perform actions or manipulate data within the object.
+
+3.Internal Representation:
+
+Under the hood, objects in JavaScript are typically implemented using either dictionaries or hash maps.
+Each property of an object is stored as a key-value pair within this internal data structure.
+When you access or modify a property of an object, JavaScript engines use efficient algorithms to look up or update the corresponding entry in the internal representation.
+
+4.Memory Management:
+
+JavaScript engines employ various memory management techniques, such as garbage collection, to manage the memory used by objects.
+When an object is no longer referenced, it becomes eligible for garbage collection, and the memory it occupies can be reclaimed.
+
+5.Object Prototypes and Inheritance:
+
+JavaScript uses prototypal inheritance, where objects inherit properties and methods from their prototypes.
+Each object has an internal reference to its prototype, which allows it to access properties and methods defined on the prototype chain.
+
