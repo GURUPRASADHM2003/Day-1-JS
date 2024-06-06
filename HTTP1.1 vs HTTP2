@@ -1,0 +1,10 @@
+HTTP/1.1 and HTTP/2 are both protocols used for transmitting data over the web, but they differ significantly in terms of performance, features, and how they handle requests and responses. Here's a breakdown of the key differences:
+
+Multiplexing: In HTTP/1.1, only one request can be outstanding on a connection at a time. This means that if a client wants to download multiple resources from a server, it has to establish multiple connections, leading to increased latency and overhead. HTTP/2 introduces multiplexing, allowing multiple requests and responses to be sent and received concurrently on the same connection. This reduces latency and improves efficiency.
+
+Header Compression: HTTP/1.1 sends headers in plaintext with each request and response, leading to unnecessary overhead, especially for large headers or repeated headers. HTTP/2 introduces header compression, which significantly reduces the size of headers by using a technique called HPACK. This reduces bandwidth usage and speeds up page loading times.
+
+Server Push: HTTP/2 allows servers to push resources to clients before they are explicitly requested. This feature can be used to preemptively send resources that the server predicts the client will need, further reducing latency and improving performance.
+
+Binary Protocol: HTTP/1.1 uses textual headers, which are human-readable but inefficient to parse for machines. HTTP/2 uses a binary framing layer, which is more efficient for parsing and processing by computers.
+Overall, HTTP/2 is designed to address the limitations of HTTP/1.1 and improve web performance, particularly for modern web applications that require high-speed, low-latency communication. However, it's worth noting that while HTTP/2 offers many performance improvements, its adoption and effectiveness depend on various factors, including server and client support, network conditions, and the specific characteristics of the web application
