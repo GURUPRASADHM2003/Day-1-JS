@@ -25,5 +25,5 @@ When an object is no longer referenced, it becomes eligible for garbage collecti
 5.Object Prototypes and Inheritance:
 
 JavaScript uses prototypal inheritance, where objects inherit properties and methods from their prototypes.
-Each object has an internal reference to its prototype, which allows it to access properties and methods defined on the prototype chain.
+Each object has an internal reference to its prototype, which allows it to access properties and methods defined on the prototype chain..
 
